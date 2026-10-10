@@ -64,7 +64,7 @@ python build_exe.py
 
 输出为 `dist/VideoMerge.exe`，包含 logo 和 FFmpeg。用户使用 EXE 无需另装 Python。打包工具会生成本地 `build/`、`dist/` 和 `.spec` 文件，均不应提交到源码仓库。
 
-源码包不附带 BlueStacks 安装器、好学 APK、课程视频或密钥；请自行从相应官方或校内渠道获取应用。发布已打包 EXE 时，可使用 GitHub Releases，并核对随附 FFmpeg 版本的许可证及再分发要求。
+本项目不附带 BlueStacks 安装器、好学 APK、课程视频或密钥；请自行从相应官方或校内渠道获取应用。
 
 ## 限制与排错
 
@@ -73,8 +73,8 @@ python build_exe.py
 - 默认读取 `/storage/emulated/0/Android/data/com.pku.studious/files/Video/Download`。
 - 清单结束标记和分片存在检查不能完全替代 APP 的下载完成状态，请先在 APP 中确认。
 - 导入和合并期间需要容纳分片副本与 MP4，建议预留至少下载体积两倍的空间并留有余量。
-- 99% 时可能正在整理 MP4；源文件若损坏，仍可能出现花屏或音画异常。
-- 这是本地下载文件整理工具，不负责登录、获取课程权限或自动下载课程。
+- 进度 99% 时可能正在整理 MP4；源文件若损坏，仍可能出现花屏或音画异常。
+- 这是本地下载文件整理工具，不负责登录、获取课程权限或从APP里自动下载课程。
 
 ## 作者
 
